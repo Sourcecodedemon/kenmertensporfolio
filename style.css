@@ -1,0 +1,294 @@
+/*.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  } */
+  
+  /*colors ---
+  #252525 - darkblack
+  #d5d5d3 - lightgrey
+  #ffffff - White
+  #444444 - darkgrey
+  #fdd947 - goldyellow
+  --- */
+
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+ html
+ {
+  scroll-behavior: smooth;
+ }
+  /* -------------------- Header section -----------------------*/
+/* Styles for header */
+header{
+  background-color: #222222;
+  min-height: 350px;
+}
+header ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center the list items horizontally */
+  font-family: poppins;
+  font-size: 14px;
+}
+
+header ul li {
+  display: inline-block;
+  /*font-size: 14px;*/
+}
+
+header ul li:not(:last-child) {
+  margin-right: 20px; /* Add right margin to all list items except the last one */
+}
+
+header ul li a {
+  color: #fff; /* Example link color */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header ul li a:hover {
+  text-decoration: underline; /* Example hover effect */
+}
+header h1{
+  font-family: poppins;
+  padding-left: 10px;
+  color:#fdd947;
+}
+header h2{
+  font-family: poppins;
+  font-weight: 300;
+  padding-top: 100px;
+  padding-left: 10px;
+  color:#fff
+}
+
+/*--------------------------- Services section --------------------------*/
+#services{
+  font-family: poppins;
+  padding: 20px;
+  background-color: #222;
+  color:#fff
+  
+}
+
+.apps
+{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /* Two columns */
+  grid-auto-columns: minmax(auto,auto);
+  grid-auto-rows: minmax(auto, auto); /* Adjust row height as needed */
+  grid-gap: 10px;
+  text-align: center;
+  padding-top: 20px;
+  align-items: center;
+}
+.apps h4{
+  font-weight: 500;
+  color:#fdd947
+}
+
+
+.appi {
+  padding: 0;
+  border-radius: 5px;
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  
+} 
+.appi img{
+  width: 100px;
+  width: 100px;
+ 
+}
+
+.app h4 {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+/*------------------------------- About Section -----------------------------*/
+#about
+{
+    font-family: poppins;
+    padding-left: 10px;
+    background-color: #222222;
+    color:#fff
+}
+.introtext a{
+  color:#fdd947
+
+}
+#about b{
+    color:#fdd947
+}
+/*------------------------------- experience section ---------------------------*/
+#experience
+{
+    padding-left: 10px;*
+    font-family: poppins;
+    background-color: #222222;
+    color:#fff
+}
+#experience h3{
+  font-family: poppins;
+  font-weight: 600;
+}
+#experience li{
+  font-family: poppins;
+  font-weight: 300;
+}
+/*------------------------------- contact section ---------------------------*/
+#contact
+{
+    font-family: poppins;
+    padding-left: 10px;*
+}
+/*------------------------------- socialmedia section ---------------------------*/
+.social-media img
+{
+    width: 40px;
+    height: 40px;
+   
+}
+.social-media a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+/* WebKit animation for browser compatibility */
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+.social-media a:hover {
+    -webkit-animation: pulse 0.5s ease; /* Apply animation on hover */
+}
+
+/*------------------------------- footer section ---------------------------*/
+footer
+{
+    font-family: poppins;
+    padding-left: 10px;
+}
