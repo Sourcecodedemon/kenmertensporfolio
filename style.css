@@ -107,11 +107,12 @@
   } */
   
   /*colors ---
-  #252525 - darkblack
-  #d5d5d3 - lightgrey
+  #222629 - darkblackish
+  #86C232 - lightgreen
   #ffffff - White
-  #444444 - darkgrey
-  #fdd947 - goldyellow
+  #61892F- darkgreen
+  #6B6E70 - lightgrey
+  #474B4F - grey
   --- */
 
   *{
@@ -123,25 +124,27 @@
  {
   scroll-behavior: smooth;
  }
-  /* -------------------- Header section -----------------------*/
-/* Styles for header */
-header{
-  background-color: #222222;
+   /* -------------------- Header section -----------------------*/
+ header
+{
+  background-color: #222629;
   min-height: 350px;
 }
-header ul {
+header ul 
+{
   list-style: none;
   float: right;
   margin: 0;
   padding: 0;
-  text-align: center; /* Center the list items horizontally */
+  text-align: center;
   font-family: poppins;
   font-size: 14px;
+  display: inline;
 }
 
 header ul li {
   display: inline-block;
-  /*font-size: 14px;*/
+  font-size: 14px;
 }
 
 header ul li:not(:last-child) {
@@ -149,18 +152,18 @@ header ul li:not(:last-child) {
 }
 
 header ul li a {
-  color: #fff; /* Example link color */
+  color: #fff;  
   text-decoration: none;
   font-size: 14px;
 }
 
 header ul li a:hover {
-  text-decoration: underline; /* Example hover effect */
+  text-decoration: underline; 
 }
 header h1{
   font-family: poppins;
   padding-left: 10px;
-  color:#fdd947;
+  color:#61892F;
 }
 header h2{
   font-family: poppins;
@@ -168,6 +171,101 @@ header h2{
   padding-top: 100px;
   padding-left: 10px;
   color:#fff
+}
+header button{
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 50px;
+  
+}
+header button a {
+  background-color: #86C232;
+  color: #222629;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  list-style: none;
+  padding-left:10px;
+  
+}
+header button li a {
+  list-style: none;
+  padding-left:10px;
+  
+}
+
+
+header button a:hover {
+  background-color: #61892F;
+}
+ nav{
+  background-color: rgb(26, 146, 10);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+  float: right;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #176907;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
 }
 
 /*--------------------------- Services section --------------------------*/
@@ -230,13 +328,168 @@ header h2{
 #about b{
     color:#fdd947
 }
+.skills{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /* Two columns */
+  grid-auto-columns: minmax(auto,auto);
+  grid-auto-rows: minmax(auto, auto); /* Adjust row height as needed */
+  grid-gap: 20px;
+  
+  padding-top: 10px;
+  align-items: center;
+}
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    transform: translateY(35px) ;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: #61892F
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #86C232;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.html{
+  width: 40%;
+  animation-delay: 0.1s;
+}
+.skill-per.css{
+    width: 40%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 30%;
+    animation-delay: 0.2s;
+}
+.skill-per.SQL{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+  .skill-per.dutch{
+    width: 100%;
+    animation-delay: 0.1s;
+  }
+  .skill-per.french{
+      width: 70%;
+      animation-delay: 0.1s;
+  }
+  .skill-per.english{
+      width: 90%;
+      animation-delay: 0.2s;
+  }
+  .skill-per.german{
+      width: 50%;
+      animation-delay: 0.3s;
+  }
+  @keyframes progress {
+      0%{
+          width: 0;
+          opacity: 1;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  .skill-per .tooltip{
+      position: absolute;
+      right: -14px;
+      top: -28px;
+      font-size: 9px;
+      font-weight: 500;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 3px;
+      background: #4070f4;
+      z-index: 1;
+  }
+  .tooltip::before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      height: 10px;
+      width: 10px;
+      z-index: -1;
+      background-color: #4070f4;
+      transform: translateX(-50%) rotate(45deg);
+
+}
 /*------------------------------- experience section ---------------------------*/
 #experience
 {
     padding-left: 10px;*
     font-family: poppins;
     background-color: #222222;
-    color:#fff
+    color:#fff;
+    white-space: 5px;
+    padding-top: 5px;*
+    
+}
+#experience .project{
+  padding-top: 5px;
+}
+#experience li{
+  padding-top: 5px;
+  text-decoration: none;
+  list-style: none;
 }
 #experience h3{
   font-family: poppins;

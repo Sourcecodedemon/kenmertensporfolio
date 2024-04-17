@@ -12,18 +12,41 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="#software">Software</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <h2>Hello, I am</h2>
-        <h1>Ken Mertens</h1>
         
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+              <li class="hideOnMobile"><a href="#services">Services</a></li>
+              <li class="hideOnMobile"><a href="#about">About me</a></li>
+              <li class="hideOnMobile"><a href="#experience">Experience</a></li>
+              <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function showSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+        </script>
+            <h2>Hello, I am</h2>
+            <h1>Ken Mertens</h1>
+            <button><li><a href="path_to_your_resume.pdf" download>Download Resume</a></li></button> <!-- Add this line for the download button -->
+       
     </header>
 
-    <section id="services">
+  <!--   <section id="services">
         <h2>What can I mean for you!</h2>
         <div class="company">
             
@@ -78,7 +101,7 @@
             </div>
         </div>
       
-    </section>
+    </section>-->
     
     <section id="about">
         <div class="introtext"></div>
@@ -93,8 +116,85 @@
             <p><b>Date of birth:</b> 03/05/1991</p>
             <p><b>Place of birth:</b> Aalst,Belgium</p>
             <p><b>Nationality:</b> Belgian</p>
+            <p><b>Adress:</b> Edestraat 124, 9450 Haaltert</p>
+
     </div>
-    </section>
+    <h4>My Skills</h4>
+<div class="skills">
+        
+    <div class="container">
+        <h4>Syntax</h4>
+        <div class="skill-box">
+            <span class="title">HTML</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">40%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">CSS</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">40%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">JavaScript</span>
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                    <span class="tooltip">30%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">SQL</span>
+            <div class="skill-bar">
+                <span class="skill-per SQL">
+                    <span class="tooltip">60%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--languages-->
+    
+    <div class="container">
+        <h4>Languages</h4>
+        <div class="skill-box">
+            <span class="title">Dutch</span>
+            <div class="skill-bar">
+                <span class="skill-per dutch">
+                    <span class="tooltip">100%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">French</span>
+            <div class="skill-bar">
+                <span class="skill-per french">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">English</span>
+            <div class="skill-bar">
+                <span class="skill-per english">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">German</span>
+            <div class="skill-bar">
+                <span class="skill-per german">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
     
     <section id="experience">
         <h2>Experience</h2>
@@ -134,10 +234,14 @@
     
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can reach me at: your@email.com</p>
+        <p></p>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/ken-mertens-aa5411190/" target="_blank"><img src="/img/linkedin-icon.png" alt="LinkedIn"></a>
             <a href="https://github.com/Sourcecodedemon" target="_blank"><img src="/img/github.png" alt="GitHub"></a>
+            <button><a href="mailto:your@email.com"><img src="/img/emailpng.png"</a></button>
+            
+            
+            
             <!-- Add more social media links as needed -->
         </div>
     </section>
