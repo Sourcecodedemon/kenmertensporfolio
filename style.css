@@ -106,14 +106,6 @@
     font-style: italic;
   } */
   
-  /*colors ---
-  #222629 - darkblackish
-  #86C232 - lightgreen
-  #ffffff - White
-  #61892F- darkgreen
-  #6B6E70 - lightgrey
-  #474B4F - grey
-  --- */
 
   *{
     margin: 0;
@@ -127,8 +119,10 @@
    /* -------------------- Header section -----------------------*/
  header
 {
-  background-color: #222629;
-  min-height: 350px;
+  background-image: url(img/bckgrnd.png) ;
+  background-size:cover;
+  min-height: 600px;
+  
 }
 header ul 
 {
@@ -162,44 +156,39 @@ header ul li a:hover {
 }
 header h1{
   font-family: poppins;
-  padding-left: 10px;
-  color:#61892F;
+  padding-left: 15px;
+  color:#66FCF1;
+  font-size: 4em;
 }
 header h2{
   font-family: poppins;
   font-weight: 300;
-  padding-top: 100px;
-  padding-left: 10px;
+  padding-top: 200px;
+  padding-left: 15px;
+  font-size: 3em;
   color:#fff
 }
-header button{
-  list-style: none;
-  margin-left: 10px;
-  margin-top: 50px;
-  
-}
-header button a {
-  background-color: #86C232;
-  color: #222629;
-  padding: 10px 20px;
-  border-radius: 5px;
+button.download{
+  background-color: #0b0c10;
+  border: 2px solid black;
+  border-color: #66FCF1;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   transition: background-color 0.3s ease;
   list-style: none;
-  padding-left:10px;
-  
+  margin-left:18px;
+  padding:10px;
+  margin-top: 30px;
 }
-header button li a {
-  list-style: none;
-  padding-left:10px;
-  
+button.download li a{
+  color:#66FCF1;
+  text-decoration: none;
+
 }
 
-
-header button a:hover {
-  background-color: #61892F;
+header button li a:hover {
+  text-decoration: underline;  
 }
  nav{
   background-color: rgb(26, 146, 10);
@@ -225,7 +214,7 @@ nav a{
   color: black;
 }
 nav a:hover{
-  background-color: #176907;
+  background-color: #45a29E;
 }
 nav li:first-child{
   margin-right: auto;
@@ -268,29 +257,50 @@ nav li:first-child{
   }
 }
 
-/*--------------------------- Services section --------------------------*/
-#services{
+/*--------------------------- why me section --------------------------*/
+#whyme{
   font-family: poppins;
-  padding: 20px;
-  background-color: #222;
-  color:#fff
+  background-color: #0b0C10 ;
+  color:#fff;
   
 }
-
+#whyme h2{
+  font-weight: 200;
+  font-size: 3em;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+  color:#fff;
+  margin-left: 15px;
+  padding-top: 30px;
+}
+.company{
+  align-items: center;
+}
 .apps
 {
   display: grid;
-  grid-template-columns: repeat(3, 2fr); /* Two columns */
-  grid-auto-columns: minmax(auto,auto);
-  grid-auto-rows: minmax(auto, auto); /* Adjust row height as needed */
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  grid-gap: 50px;
   text-align: center;
   padding-top: 20px;
-  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-self: center;
+}
+@media only screen and (max-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skills {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
 .apps h4{
   font-weight: 500;
-  color:#fdd947
+  color:#45A29E
 }
 
 
@@ -300,52 +310,120 @@ nav li:first-child{
   /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
+  padding-top: 20px;
   
 } 
-.appi img{
-  width: 100px;
-  width: 100px;
- 
+.cre{
+  width: 50px;
+  height: 50px;
 }
-
+.team{
+  width: 90px;
+  height: 50px;
+}
+.amb{
+  width: 50px;
+  height: 50px;
+}
+.quick{
+  width: 50px;
+  height: 50px;
+}
+.adap{
+  width: 50px;
+  height: 50px;
+}
+.ent{
+  width: 50px;
+  height: 50px;
+}
 .app h4 {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 5px;
 }
 /*------------------------------- About Section -----------------------------*/
 #about
 {
     font-family: poppins;
-    padding-left: 10px;
-    background-color: #222222;
+    background-color: #0b0c10;
     color:#fff
 }
-.introtext a{
-  color:#fdd947
+#about h2{
+font-weight: 200;
+font-size: 3em;
+text-transform: capitalize;
+margin-left: 15px;
+padding-bottom: 15px;
 
 }
+.introtext p{
+  margin-left: 20px;
+  max-width: 600px;
+}
+.shortinfo{
+  margin-left: 20px;
+}
 #about b{
-    color:#fdd947
+    color:#66FCF1
+
+}
+
+/*--Myskills --*/
+#myskills
+{
+    font-family: poppins;
+    background-color: #0b0c10;
+    color:#fff
+}
+#myskills h2{
+font-weight: 200;
+font-size: 3em;
+text-transform: capitalize;
+margin-left: 15px;
+
+}
+.introtext p{
+  margin-left: 20px;
+  max-width: 600px;
+}
+.shortinfo{
+  margin-left: 20px;
+}
+#myskills b{
+    color:#66FCF1
 }
 .skills{
   display: grid;
   grid-template-columns: repeat(3, 2fr); /* Two columns */
   grid-auto-columns: minmax(auto,auto);
   grid-auto-rows: minmax(auto, auto); /* Adjust row height as needed */
-  grid-gap: 20px;
+  grid-gap: 50px;
+  padding-right:20px;
+  margin-right: 15px;
   
-  padding-top: 10px;
-  align-items: center;
 }
-.container{
-    position: relative;
-    max-width: 300px;
+div.container{
+    min-width: 100px;
     width: 100%;
     margin: 0 15px;
-    padding: 10px 20px;
     border-radius: 7px;
+    overflow: hidden;
+    margin: 20px;
+    padding-right: 20px;
+
 }
+.container h4{
+  font-size: 1.5em;
+  font-weight: 400;
+  color:#45A29E
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+  }
+}
+
 .container .skill-box{
     width: 100%;
     margin: 25px 0;
@@ -362,7 +440,7 @@ nav li:first-child{
     width: 100%;
     border-radius: 6px;
     margin-top: 6px;
-    background: #61892F
+    background: #2b2e38
 }
 .skill-bar .skill-per{
     position: relative;
@@ -370,7 +448,7 @@ nav li:first-child{
     height: 100%;
     width: 90%;
     border-radius: 6px;
-    background: #86C232;
+    background: #66FCF1;
     animation: progress 0.4s ease-in-out forwards;
     opacity: 0;
 }
@@ -405,10 +483,10 @@ nav li:first-child{
     top: -28px;
     font-size: 9px;
     font-weight: 500;
-    color: #fff;
+    color: black;
     padding: 2px 6px;
     border-radius: 3px;
-    background: #4070f4;
+    background: #66FCF1;
     z-index: 1;
 }
 .tooltip::before{
@@ -419,10 +497,10 @@ nav li:first-child{
     height: 10px;
     width: 10px;
     z-index: -1;
-    background-color: #4070f4;
+    background-color: #66FCF1;
     transform: translateX(-50%) rotate(45deg);
 }
-
+/*--- Languages ---*/
   .skill-per.dutch{
     width: 100%;
     animation-delay: 0.1s;
@@ -439,49 +517,77 @@ nav li:first-child{
       width: 50%;
       animation-delay: 0.3s;
   }
-  @keyframes progress {
-      0%{
-          width: 0;
-          opacity: 1;
-      }
-      100%{
-          opacity: 1;
-      }
+  /*-- software --*/
+  
+  .skill-per.photoshop{
+    width: 80%;
+    animation-delay: 0.1s;
   }
-  .skill-per .tooltip{
-      position: absolute;
-      right: -14px;
-      top: -28px;
-      font-size: 9px;
-      font-weight: 500;
-      color: #fff;
-      padding: 2px 6px;
-      border-radius: 3px;
-      background: #4070f4;
-      z-index: 1;
+  .skill-per.illustrator{
+      width: 80%;
+      animation-delay: 0.1s;
   }
-  .tooltip::before{
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: -2px;
-      height: 10px;
-      width: 10px;
-      z-index: -1;
-      background-color: #4070f4;
-      transform: translateX(-50%) rotate(45deg);
+  .skill-per.premierepro{
+      width: 70%;
+      animation-delay: 0.2s;
+  }
+  .skill-per.xd{
+      width: 70%;
+      animation-delay: 0.3s;
+  }
+  .skill-per.aftereffects{
+    width: 70%;
+    animation-delay: 0.3s;
+}
 
+/*--Office--*/
+.skill-per.excel{
+  width: 80%;
+  animation-delay: 0.1s;
+}
+.skill-per.powerpoint{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+.skill-per.word{
+    width: 80%;
+    animation-delay: 0.2s;
+}
+.skill-per.outlook{
+    width: 80%;
+    animation-delay: 0.3s;
+}
+/*--Other--*/
+.skill-per.binance{
+  width: 80%;
+  animation-delay: 0.1s;
+}
+.skill-per.vsc{
+    width: 40%;
+    animation-delay: 0.1s;
+}
+.skill-per.jasper{
+    width: 60%;
+    animation-delay: 0.2s;
+}
+.skill-per.jira{
+    width: 80%;
+    animation-delay: 0.3s;
 }
 /*------------------------------- experience section ---------------------------*/
 #experience
 {
-    padding-left: 10px;*
-    font-family: poppins;
-    background-color: #222222;
+  
+    font-family: poppins; 
+    background-color: #0b0c10;
     color:#fff;
     white-space: 5px;
-    padding-top: 5px;*
+    padding-top: 5px;
     
+}
+#experience h2{
+  font-weight: 200;
+  margin-left: 15px;
 }
 #experience .project{
   padding-top: 5px;
@@ -499,13 +605,188 @@ nav li:first-child{
   font-family: poppins;
   font-weight: 300;
 }
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #fff;
+	transition:all ease 0.3s;
+     
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #66FCF1;
+       	 
+	background: linear-gradient(to right, #66FCF1 0%,#1F2833 100%); 
+}
+
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+  font-size: 14px;
+  color:#fff;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+
+
+#progress-bar-container li.active:after {
+	background:#207893;
+}
+
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #1F2833;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: #66FCF1;	 
+	background: linear-gradient(to right, #45a29E 0%,#66FCF1 100%); 
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #1F2833;
+	border-radius: 4px;
+  }
+
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:1px;
+}
+img{
+height:100px;
+width:100px;
+}
+
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:#fff;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
 /*------------------------------- contact section ---------------------------*/
 #contact
 {
     font-family: poppins;
-    padding-left: 10px;*
+    padding-left: 10px;
+}
+#contact h2{
+  font-weight: 200;
+  margin-top: 20px;
 }
 /*------------------------------- socialmedia section ---------------------------*/
+.social-media{
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
 .social-media img
 {
     width: 40px;
@@ -543,5 +824,5 @@ nav li:first-child{
 footer
 {
     font-family: poppins;
-    padding-left: 10px;
+    padding-left: 25px;
 }

@@ -15,18 +15,20 @@
         
         <nav>
             <ul class="sidebar">
-              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" fill="#66FCF1"viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About me</a></li>
               <li><a href="#experience">Experience</a></li>
+              <li><a href="#myskills">My skills</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
             <ul>
-              <li class="hideOnMobile"><a href="#services">Services</a></li>
+              <li class="hideOnMobile"><a href="#whyme">Why me?</a></li>
               <li class="hideOnMobile"><a href="#about">About me</a></li>
               <li class="hideOnMobile"><a href="#experience">Experience</a></li>
+              <li class="hideOnMobile"><a href="#myskills">My skills</a></li>
               <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" fill="#66FCF1" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
             </ul>
         </nav>
         
@@ -42,12 +44,25 @@
         </script>
             <h2>Hello, I am</h2>
             <h1>Ken Mertens</h1>
-            <button><li><a href="path_to_your_resume.pdf" download>Download Resume</a></li></button> <!-- Add this line for the download button -->
+            <button class="download"><li><a href="C:/Users/kenme/OneDrive/Bureaublad/kenmertensporfolio/index.html" download>Download Resume</a></li></button> <!-- Add this line for the download button -->
        
     </header>
-
-  <!--   <section id="services">
-        <h2>What can I mean for you!</h2>
+    <section id="about">
+     <div class="introtext">
+        <h2>About me</h2>
+        <p>I'm Ken Mertens, an ambitious individual passionate about all things IT/ICT. My keen interest in economic and business opportunities is ingrained in my nature. I believe in the strength of teamwork to overcome challenges, leveraging our diverse strengths to achieve success.</p>
+     </div>
+     <div class="shortinfo">
+     <br>
+         <p></p><b>Name:</b> Ken Mertens</p>
+         <p><b>Date of birth:</b> 03/05/1991</p>
+         <p><b>Place of birth:</b> Aalst,Belgium</p>
+         <p><b>Nationality:</b> Belgian</p>
+         
+     </div>
+    </section>
+     <section id="whyme">
+        <h2>Why me?</h2>
         <div class="company">
             
             <div class="apps">
@@ -55,7 +70,7 @@
                     <p><h4>Creative</h4></p>
                     Out of the box thinking and creative solutions.
                     <div class="appi">
-                    <img src="img/aepng.png" alt="placeholder">
+                    <img class="cre" src="img/creative.png" alt="placeholder">
                     </div>
 
             </div>
@@ -63,7 +78,7 @@
                     <p><h4>Team player</h4></p>
                     Working as a team is a strongsuit.
                     <div class="appi">
-                    <img src="img/aepng.png" alt="placeholder">
+                    <img class="team" src="img/team.png" alt="placeholder">
                     
                     </div>
             </div>
@@ -71,7 +86,7 @@
                 <p><h4>Ambitious</h4></p>
                     Ambitious personality "A go getter".
                 <div class="appi">
-                    <img src="img/aepng.png" alt="placeholder">
+                    <img class="amb" src="img/ambitious.png" alt="placeholder">
                 </div>
     
             </div>
@@ -79,7 +94,7 @@
                 <p><h4>Quick learning</h4></p>
                     Pick up things fast and can implement them.
                 <div class="appi">
-                    <img src="img/aepng.png" alt="placeholder">
+                    <img class="quick" src="img/quicklearn.png" alt="placeholder">
                 </div>
     
             </div>
@@ -87,7 +102,7 @@
                 <p><h4>Adaptable</h4></p>
                     Re-adjust to situations as needed.
                 <div class="appi">
-                    <img src="img/aepng.png" alt="placeholder">
+                    <img class="adap" src="img/adaptable.png" alt="placeholder">
                 </div>
     
             </div>
@@ -95,31 +110,17 @@
                 <p><h4>Entrepreneurial</h4></p>
                     Understanding of core principals of Business in a wide variety of sectors.
                 <div class="appi">
-                    <img src="img/aepng.png" alt="placeholder">
+                    <img class="ent" src="img/entrepreneur.png" alt="placeholder">
                 </div>
     
             </div>
         </div>
       
-    </section>-->
+    </section>
     
-    <section id="about">
-        <div class="introtext"></div>
-           <h2>About me</h2>
-           <p>I am Ken Mertens, an ambitious young man interested in everything IT/ICT related.
-            Economic and business possibilities or opportunities feel like a second nature to me.
-            Tackeling obstacles as a team make us stronger as we all have different strongsuits.</p>
-        </div> 
-        <div class="shortinfo"></div>
-        <br>
-            <p></p><b>Name:</b> Ken Mertens</p>
-            <p><b>Date of birth:</b> 03/05/1991</p>
-            <p><b>Place of birth:</b> Aalst,Belgium</p>
-            <p><b>Nationality:</b> Belgian</p>
-            <p><b>Adress:</b> Edestraat 124, 9450 Haaltert</p>
+    <section id="myskills">
 
-    </div>
-    <h4>My Skills</h4>
+    <h2>My skills</h2>
 <div class="skills">
         
     <div class="container">
@@ -194,55 +195,246 @@
             </div>
         </div>
     </div>
+    <!--Adobe-->
+    <div class="container">
+        <h4>Adobe</h4>
+        <div class="skill-box">
+            <span class="title">Photoshop</span>
+            <div class="skill-bar">
+                <span class="skill-per photoshop">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Illustrator</span>
+            <div class="skill-bar">
+                <span class="skill-per illustrator">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Premiere Pro</span>
+            <div class="skill-bar">
+                <span class="skill-per premierepro">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Xd</span>
+            <div class="skill-bar">
+                <span class="skill-per xd">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">After Effects</span>
+            <div class="skill-bar">
+                <span class="skill-per aftereffects">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--MS Office-->
+    <div class="container">
+        <h4>MS Office</h4>
+        <div class="skill-box">
+            <span class="title">Excel</span>
+            <div class="skill-bar">
+                <span class="skill-per excel">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Powerpoint</span>
+            <div class="skill-bar">
+                <span class="skill-per powerpoint">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Word</span>
+            <div class="skill-bar">
+                <span class="skill-per word">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Outlook</span>
+            <div class="skill-bar">
+                <span class="skill-per outlook">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--Other-->
+    <div class="container">
+        <h4>Other</h4>
+        <div class="skill-box">
+            <span class="title">Binance</span>
+            <div class="skill-bar">
+                <span class="skill-per binance">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Visual Studio Code</span>
+            <div class="skill-bar">
+                <span class="skill-per vsc">
+                    <span class="tooltip">40%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Jaspersoft</span>
+            <div class="skill-bar">
+                <span class="skill-per jasper">
+                    <span class="tooltip">60%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">Jira/confluence</span>
+            <div class="skill-bar">
+                <span class="skill-per jira">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+    </div>
 </div>
     
     <section id="experience">
         <h2>Experience</h2>
-        <!-- List your projects here with brief descriptions -->
-        <div class="project">
-            <h3>Superuser - Belcolade</h3>
-            <li>Configure machinery and solve issues with local software (MES/Simatic)</li>
-            <li>Experience with SAP as ERP system</li>
-            <li>Work as a team with management to increase performance and implement KPI's for further process improvement</li>
-        </div>
-        <div class="project">
-            <h3>Warehouse Employee - TEE</h3>
-            <li>Loading and unloading trucks</li>
-            <li>Orderpicking</li>
-            <li>Stock management</li>
-        </div>
-        <div class="project">
-            <h3>Commercial employee - Cuprochimique</h3>
-            <li>Orderinput into local ERP system (M-soft)</li>
-            <li>Make quotations for new customers</li>
-            <li>Firstline support for customers</li>
-            <li>Plan deliveries and follow up on important projects</li>
-            <li>Marketing project management</li>
-        </div>
-        <div class="project">
-            <h3>Firstline Support - Globis</h3>
-            <li>Customer care and support for ERP package</li>
-            <li>Respond to logged tickets and determine priority</li>
-            <li>Help with defect testing and reprostep bugs</li>
-            <li>Follow up on important customer projects and report weekly</li>
-            <li>Database management and updates</li>
-            <li>Database security - making ssl certificates with OpenSSL</li>
-            <li>ReGEX code to eliminate commented code and pushing it to separate branch from master</li>
-        </div>
-        <!-- Add more project divs as needed -->
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">Belcolade</div></li>
+		<li class="step step02"><div class="step-inner">TEE</div></li>
+		<li class="step step03"><div class="step-inner">Cupro</div></li>
+		<li class="step step04"><div class="step-inner">M&M</div></li>
+		<li class="step step05"><div class="step-inner">Globis</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+        <img class="belcolade" src="img/Belcolade-Logo.jpg" alt="belcolade">
+        <h2>Superuser</h2>
+        <p>Configuring machines and troubleshoot issues with MES/Simatic software.</p>
+        <p>Experience working with SAP as ERP software.</p>
+        <p>Help with production process improvements and work towards KPI's.</p>
+
+	</div>
+	
+	<div class="section-content strategy">
+        <img class="TEE" src="img/TEE.png" alt="trans europe express">
+		<h2>Warehouse employee</h2>
+        <p>Warehouse management and loading/unloading trucks.</p>
+        <p>Orderpicking and pre</p>
+	</div>
+	
+	<div class="section-content creative">
+        <img class="cupro" src="img/cupro.jpg" alt="cupro">
+		<h2>Inhouse commercial employee</h2>
+        <p>Customer service planning deliveries and give product information.</p>
+        <p>Make quotations based on supplier price and work towards a profitable solution for the customer.</p>
+        <p>Familiar with M-soft as ERP software.</p>
+        <p>Help with marketing and SEO to increase sales.</p>
+
+	</div>
+	
+	<div class="section-content production">
+        <img class="Milly and Maurice" src="img/mm.png" alt="M&M">
+		<h2>Founder</h2>
+        <p>Dropship webshop on bigcommerce.</p>
+        <p>Sales in interior design and custom wallpaper.</p>
+        <p>running add campaigns and try reaching potential customers.</p>
+	</div>
+	
+	<div class="section-content analysis">
+        <img class="globis" src="img/logo-globis.png" alt="globis">
+		<h2>1st line customer support</h2>
+        <li><p>Respond to tickets within the SLA and analise the priority of the ticket.</p>
+        <p>Determine if the issues is client based or software based.</p>
+        <p>Report and reprostep bugs to the development team.</p>
+        <p>Bug testing fixed bugs and eventually push those to customers branch.</p>
+        <p>ReGEXing Code to eliminate commented code in the master branch and pushing this to a seperate branch for review so it can get merged afterwards.</p>
+        <p>Making SSL certificates for database with OpenSSL.</p></li>
+	</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
     </section>
     
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <p></p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/ken-mertens-aa5411190/" target="_blank"><img src="/img/linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="https://github.com/Sourcecodedemon" target="_blank"><img src="/img/github.png" alt="GitHub"></a>
-            <button><a href="mailto:your@email.com"><img src="/img/emailpng.png"</a></button>
+            <a href ="https://www.linkedin.com/in/ken-mertens-aa5411190/">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" fill="#66FCF1" height="50" viewBox="0 0 50 50">
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+            </svg></a>
+            <a href="https://github.com/Sourcecodedemon">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" fill="#66FCF1" height="50" viewBox="0 0 64 64">
+                <path d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"></path>
+                
+            </svg></a>
+            <a href="mailto:kenmertens@outlook.com">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#66FCF1" width="50" height="50" viewBox="0 0 32 32"><g data-name="7-Email-Arrow up"><path d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h13v-2H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23V17h2V7a3 3 0 0 0-3-3zM16 14.77 3.72 6h24.56z"/><path d="m24.29 18.29-4 4 1.41 1.41 2.3-2.29V29h2v-7.59l2.29 2.29 1.41-1.41-4-4a1 1 0 0 0-1.41 0z"/></g></svg>
+            </a>
+
             
             
-            
-            <!-- Add more social media links as needed -->
         </div>
     </section>
     
