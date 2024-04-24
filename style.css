@@ -162,7 +162,7 @@ header h1{
 }
 header h2{
   font-family: poppins;
-  font-weight: 300;
+  font-weight: 200;
   padding-top: 200px;
   padding-left: 15px;
   font-size: 3em;
@@ -270,7 +270,7 @@ nav li:first-child{
   text-transform: capitalize;
   padding-bottom: 30px;
   color:#fff;
-  margin-left: 15px;
+  margin-left: 20px;
   padding-top: 30px;
 }
 .company{
@@ -313,30 +313,6 @@ nav li:first-child{
   padding-top: 20px;
   
 } 
-.cre{
-  width: 50px;
-  height: 50px;
-}
-.team{
-  width: 90px;
-  height: 50px;
-}
-.amb{
-  width: 50px;
-  height: 50px;
-}
-.quick{
-  width: 50px;
-  height: 50px;
-}
-.adap{
-  width: 50px;
-  height: 50px;
-}
-.ent{
-  width: 50px;
-  height: 50px;
-}
 .app h4 {
   display: inline-block;
   font-size: 1.5em;
@@ -353,7 +329,7 @@ nav li:first-child{
 font-weight: 200;
 font-size: 3em;
 text-transform: capitalize;
-margin-left: 15px;
+margin-left: 20px;
 padding-bottom: 15px;
 
 }
@@ -376,11 +352,11 @@ padding-bottom: 15px;
     background-color: #0b0c10;
     color:#fff
 }
-#myskills h2{
+.myskillsheader h2{
 font-weight: 200;
 font-size: 3em;
 text-transform: capitalize;
-margin-left: 15px;
+margin-left: 20px;
 
 }
 .introtext p{
@@ -580,14 +556,19 @@ div.container{
   
     font-family: poppins; 
     background-color: #0b0c10;
-    color:#fff;
     white-space: 5px;
     padding-top: 5px;
     
 }
-#experience h2{
+.experienceheader h2{
   font-weight: 200;
-  margin-left: 15px;
+  color:#fff;
+  font-size: 3em;
+  margin-left: 20px;
+}
+
+#experience h5{
+  font-weight: 200;
 }
 #experience .project{
   padding-top: 5px;
@@ -667,7 +648,7 @@ div.container{
 	width:100%;
 	bottom:0;
   font-size: 14px;
-  color:#fff;
+  color:#777;
 }
 
 #progress-bar-container li.active, #progress-bar-container li:hover {
@@ -724,11 +705,12 @@ div.container{
 	margin: auto;
 	background: #1F2833;
 	border-radius: 4px;
-  }
+  text-align: center;
+}
 
 #progress-content-section .section-content {
 	padding:30px 40px;
-	text-align:center;
+
 }
 #progress-content-section .section-content h2 {
 	font-size:17px;
@@ -739,6 +721,10 @@ div.container{
 img{
 height:100px;
 width:100px;
+}
+.jobdescript{
+  text-align:left;
+  padding-top: 20px;
 }
 
 #progress-content-section .section-content p {
@@ -774,15 +760,17 @@ width:100px;
 #contact
 {
     font-family: poppins;
-    padding-left: 10px;
+    margin-left: 20px;
+    
 }
-#contact h2{
+.contactheader h2{
   font-weight: 200;
   margin-top: 20px;
+  margin-left: -2px;
+  font-size: 3em;
 }
 /*------------------------------- socialmedia section ---------------------------*/
 .social-media{
-  margin-left: 15px;
   margin-bottom: 15px;
 }
 

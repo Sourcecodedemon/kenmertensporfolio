@@ -16,17 +16,17 @@
         <nav>
             <ul class="sidebar">
               <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" fill="#66FCF1"viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About me</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#myskills">My skills</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a onclick=hideSidebar() href="#about">About me</a></li>
+              <li><a onclick=hideSidebar() href="#whyme">Why me?</a></li>
+              <li><a onclick=hideSidebar() href="#myskills">My skills</a></li>
+              <li><a onclick=hideSidebar() href="#experience">Experience</a></li>
+              <li><a onclick=hideSidebar() href="#contact">Contact</a></li>
             </ul>
             <ul>
-              <li class="hideOnMobile"><a href="#whyme">Why me?</a></li>
               <li class="hideOnMobile"><a href="#about">About me</a></li>
-              <li class="hideOnMobile"><a href="#experience">Experience</a></li>
+              <li class="hideOnMobile"><a href="#whyme">why me?</a></li>
               <li class="hideOnMobile"><a href="#myskills">My skills</a></li>
+              <li class="hideOnMobile"><a href="#experience">Experience</a></li>
               <li class="hideOnMobile"><a href="#contact">Contact</a></li>
               <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" fill="#66FCF1" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
             </ul>
@@ -70,7 +70,8 @@
                     <p><h4>Creative</h4></p>
                     Out of the box thinking and creative solutions.
                     <div class="appi">
-                    <img class="cre" src="img/creative.png" alt="placeholder">
+                    <!--<img class="cre" src="img/creativity.jpeg" alt="placeholder">-->
+                    <iframe class="imagination" src="https://giphy.com/embed/QIiqoufLNmWo8" width="200" height="200" frameBorder="0" ></iframe>
                     </div>
 
             </div>
@@ -78,7 +79,7 @@
                     <p><h4>Team player</h4></p>
                     Working as a team is a strongsuit.
                     <div class="appi">
-                    <img class="team" src="img/team.png" alt="placeholder">
+                        <iframe src="https://giphy.com/embed/DhstvI3zZ598Nb1rFf" width="200" height="180" frameBorder="0"></iframe>
                     
                     </div>
             </div>
@@ -86,15 +87,15 @@
                 <p><h4>Ambitious</h4></p>
                     Ambitious personality "A go getter".
                 <div class="appi">
-                    <img class="amb" src="img/ambitious.png" alt="placeholder">
+                    <iframe src="https://giphy.com/embed/E47JKwZnxvHuPjPkn1" width="200" height="200" frameBorder="0"></iframe>
                 </div>
     
             </div>
             <div class="app">
-                <p><h4>Quick learning</h4></p>
-                    Pick up things fast and can implement them.
+                <p><h4>Consistent learning</h4></p>
+                    I like to learn new things all the time.
                 <div class="appi">
-                    <img class="quick" src="img/quicklearn.png" alt="placeholder">
+                    <iframe src="https://giphy.com/embed/wITab2HBuQOqXLPvzx" width="200" height="200" frameBorder="0"></iframe>
                 </div>
     
             </div>
@@ -102,7 +103,7 @@
                 <p><h4>Adaptable</h4></p>
                     Re-adjust to situations as needed.
                 <div class="appi">
-                    <img class="adap" src="img/adaptable.png" alt="placeholder">
+                    <div class="tenor-gif-embed" data-postid="10468556" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/improvise-adapt-overcome-bear-grylls-gif-10468556">Improvise Adapt GIF</a>from <a href="https://tenor.com/search/improvise-gifs">Improvise GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
                 </div>
     
             </div>
@@ -110,7 +111,7 @@
                 <p><h4>Entrepreneurial</h4></p>
                     Understanding of core principals of Business in a wide variety of sectors.
                 <div class="appi">
-                    <img class="ent" src="img/entrepreneur.png" alt="placeholder">
+                    <div class="tenor-gif-embed" data-postid="21062780" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/the-big-short-smell-money-smell-money-gif-21062780">The Big Short Smell GIF</a>from <a href="https://tenor.com/search/the+big+short-gifs">The Big Short GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
                 </div>
     
             </div>
@@ -119,8 +120,8 @@
     </section>
     
     <section id="myskills">
-
-    <h2>My skills</h2>
+<div class="myskillsheader">
+    <h2>My skills</h2></div>
 <div class="skills">
         
     <div class="container">
@@ -314,7 +315,7 @@
 </div>
     
     <section id="experience">
-        <h2>Experience</h2>
+       <div class="experienceheader"> <h2>Experience</h2></div>
 <br> 
 <div class="process-wrapper">
 <div id="progress-bar-container">
@@ -334,47 +335,66 @@
 <div id="progress-content-section">
 	<div class="section-content discovery active">
         <img class="belcolade" src="img/Belcolade-Logo.jpg" alt="belcolade">
-        <h2>Superuser</h2>
-        <p>Configuring machines and troubleshoot issues with MES/Simatic software.</p>
-        <p>Experience working with SAP as ERP software.</p>
-        <p>Help with production process improvements and work towards KPI's.</p>
-
+        <div class="functit">
+        <h2>Superuser </h2>
+        <h5>05/2014 - 07/2017</h5></div>
+        <div class="jobdescript">
+        <p>- Configuring machines and troubleshoot issues with MES/Simatic software.</p>
+        <p>- Experience working with SAP as ERP software.</p>
+        <p>- Help with production process improvements and work towards KPI's.</p>
+    </div>
 	</div>
 	
 	<div class="section-content strategy">
         <img class="TEE" src="img/TEE.png" alt="trans europe express">
+        <div class="functit">
 		<h2>Warehouse employee</h2>
-        <p>Warehouse management and loading/unloading trucks.</p>
-        <p>Orderpicking and pre</p>
+        <h5>06/2018 - 12/2018</h5></div>
+        <div class="jobdescript">
+        <p>- Warehouse management and loading/unloading trucks.</p>
+        <p>- Orderpicking</p>
+        </div>
 	</div>
 	
 	<div class="section-content creative">
         <img class="cupro" src="img/cupro.jpg" alt="cupro">
+        <div class="functit">
 		<h2>Inhouse commercial employee</h2>
-        <p>Customer service planning deliveries and give product information.</p>
-        <p>Make quotations based on supplier price and work towards a profitable solution for the customer.</p>
-        <p>Familiar with M-soft as ERP software.</p>
-        <p>Help with marketing and SEO to increase sales.</p>
-
-	</div>
+        <h5>01/2019 - 02/2021</h5></div>
+        <div class="jobdescript">
+        <p>- Customer service planning deliveries and give product information.</p>
+        <p>- Make quotations based on supplier price and work towards a profitable solution.</p>
+        <p>- Familiar with M-soft as ERP software.</p>
+        <p>- Help with marketing and SEO to increase sales.</p>
+        </div>
+    </div>
 	
 	<div class="section-content production">
         <img class="Milly and Maurice" src="img/mm.png" alt="M&M">
+        <div class="functit">
 		<h2>Founder</h2>
-        <p>Dropship webshop on bigcommerce.</p>
-        <p>Sales in interior design and custom wallpaper.</p>
-        <p>running add campaigns and try reaching potential customers.</p>
+        <h5>01/2020 - 01/2022</h5></div>
+        <div class="jobdescript">
+        <p>- Dropship webshop on bigcommerce.</p>
+        <p>- Sales in interior design and custom wallpaper.</p>
+        <p>- running add campaigns and try reaching potential customers.</p>
+    </div>
 	</div>
 	
 	<div class="section-content analysis">
         <img class="globis" src="img/logo-globis.png" alt="globis">
+        <div class="functit">
 		<h2>1st line customer support</h2>
-        <li><p>Respond to tickets within the SLA and analise the priority of the ticket.</p>
-        <p>Determine if the issues is client based or software based.</p>
-        <p>Report and reprostep bugs to the development team.</p>
-        <p>Bug testing fixed bugs and eventually push those to customers branch.</p>
-        <p>ReGEXing Code to eliminate commented code in the master branch and pushing this to a seperate branch for review so it can get merged afterwards.</p>
-        <p>Making SSL certificates for database with OpenSSL.</p></li>
+        <h5>02/2021 - 04/2024</h5></div>
+        <div class="jobdescript">
+        <li><p>- Respond to tickets within the SLA and analise the priority of the ticket.</p>
+        <p>- Determine if the issues is client based or software based.</p>
+        <p>- Report and reprostep bugs to the development team.</p>
+        <p>- Bug testing fixed bugs and eventually push those to customers branch.</p>
+        <p>- ReGEXing Code to eliminate commented code.
+        <p>- Pushing code to separate branch from master</p>    
+        <p>- Making SSL certificates for database with OpenSSL.</p></li>
+    </div>
 	</div>
 	</div>
 </div>
@@ -416,8 +436,9 @@ $(".step05").click( function() {
     </script>
     </section>
     
-    <section id="contact">
-        <h2>Contact</h2>
+<section id="contact">
+    <div class="contactheader">
+        <h2>Contact</h2> </div>
         <p></p>
         <div class="social-media">
             <a href ="https://www.linkedin.com/in/ken-mertens-aa5411190/">
@@ -436,7 +457,7 @@ $(".step05").click( function() {
             
             
         </div>
-    </section>
+</section>
     
     <footer>
         <p>&copy; 2024 Ken Mertens</p>
